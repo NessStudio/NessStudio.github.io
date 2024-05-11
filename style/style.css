@@ -1,0 +1,858 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font: 16px/28px arial;
+    background: white;
+
+}
+
+/* Menu 1 */
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255 );
+    box-shadow: 0px 1px 10px #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    padding: 0.2rem 2%;
+}
+
+header h1{
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+header .nav .name{
+    text-decoration: none;
+    font-weight: bold;
+    color: #191624;
+    
+    
+}
+
+.nav ul li{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+
+.nav .menu{
+    position: relative;
+    font-size: 16px;
+    margin-left: 760px;
+    margin-top: -20px;
+}
+
+.nav a{
+    position: relative;
+    color: #191624;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #191624;
+    border-radius: 25px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    display: flex;
+    
+} 
+
+.nav a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nav a:hover, 
+.nav a.active{
+    color: #5271ff;
+}
+
+.main .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 80px;
+}
+
+.main .utama img{
+    height: 430px;
+    margin-top: 70px;
+    margin-left: 60px;
+  
+    
+}
+
+.main .desk .h1{
+    font-size: 85px;
+    margin-top: 210px;
+    margin-bottom: 45px;
+    line-height: 5px;
+}
+
+.main .desk .h2{
+    font-size: 30px;
+    line-height: 10px;
+    color: #737373;
+}
+
+.main .desk .p{
+    font-size: 19px;
+    margin-top: 18px;
+    color: #9a8d8f;
+}
+
+.main .sosmed ul li{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.sosmed ul li{
+    margin-left: 1000px;
+    margin-top: 30px;
+}
+.sosmed img{
+    position: relative;
+    height: 25px;
+    margin-left: 15px;
+    transition: 0.5s;
+    transform: scale(1);
+    
+}
+
+.fb img:hover{
+    transform: scale(1.5);
+}
+
+.ig img:hover{
+    transform: scale(1.5);
+}
+
+.wa img:hover{
+    transform: scale(1.5);
+}
+
+/* Menu 2 */
+
+aside{
+    position: absolute;
+    margin-top: 50px;
+    height: auto;
+    width: 175px;
+    background-color: hwb(0 100% 0%);
+    box-shadow: 1px 2px 5px #d9d9d9;
+
+}
+
+aside .profil .pp img{
+    height: 160px;
+    margin-left: 6px;
+    margin-top: -22px;
+}
+
+aside .bio .nama{
+    margin-top: -30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+aside .bio .loc{
+    margin-top: -15px;
+    text-align: center;
+    font-size: 7px;
+    color: #737373;
+    margin-bottom: 25px;
+}
+
+aside .bio .bio_desk{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 8px;
+    color: #191624;
+    line-height: 10px;
+    margin-bottom: 35px;
+    margin-top: -19px;
+}
+
+.jarak{
+    margin-top: 145px;
+}
+aside .act{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #191624;
+    margin-bottom: -3px;
+}
+
+aside .bio .act_desk{
+    margin-left: 15px;
+    line-height: 15px;
+    text-align: left;
+    font-size: 11px;
+    color: #191624;
+}  
+
+aside .tag{
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 13px;
+    color: #191624;
+    margin-bottom: -3px;
+
+}
+
+aside .bio .tag_desk{
+    margin-left: 15px;
+    line-height: 15px;
+    text-align: left;
+    font-size: 11px;
+    color: #191624;
+    
+}
+
+.sidebar .sosmed2 ul li{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.sidebar ul li{
+    margin-left: 23px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    
+}
+.sidebar img{
+    position: relative;
+    height: 18px;
+    margin-left: 15px;
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+.content .about{
+    text-align: center;
+    margin-top: 220px;
+
+}
+.content .sub{
+    font-size: 13px;
+    color: #737373;
+}
+
+
+.content .maincontent img{
+    height: 360px;
+    margin-top: 35px;
+    margin-left: -350px;
+}
+
+.content .maincontent p{
+    text-align: left;
+    font-size: 15px;
+    margin-top: -300px;
+    margin-left: 600px;
+    line-height: 22px;
+}
+
+.content .maincontent .exp{
+    margin-left: 247px;
+}
+.content .maincontent .exp h1{
+    display: inline-block;
+    padding-left: 75px;
+    margin-top: 30px;
+    
+}
+
+.content .maincontent .ket{
+    margin-left: 265px;
+    
+}
+
+.content .maincontent .ket ul li{
+    display: inline-block;
+    padding-left: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #737373;
+    line-height: 17px;
+}
+
+/* Menu 3 */
+.menu3{
+    margin-top: 400px;
+}
+.services .judul{
+    text-align: center;
+    margin-top: 480px;
+}
+
+.judul .sub{
+    font-size: 13px;
+    color: #737373;
+}
+
+.services .icon1{
+    height: 280px;
+    width: 180px;
+    margin-left: 520px;
+    background-color: #faf5f5;
+    border-radius: 25px;
+    margin-top: 80px;
+    box-shadow: 1px 2px 10px #d9d9d9;
+    padding: 0.2%;
+    
+}
+
+.services .icon2{
+    height: 280px;
+    width: 180px;
+    margin-left: 220px;
+    background-color: #faf5f5;
+    border-radius: 25px;
+    margin-top: -280px;
+    box-shadow: 1px 2px 10px #d9d9d9;
+    padding: 0.2%;
+}
+
+.services .icon3{
+    height: 280px;
+    width: 180px;
+    margin-left: 820px;
+    background-color: #faf5f5;
+    border-radius: 25px;
+    margin-top: -280px;
+    box-shadow: 1px 2px 10px #d9d9d9;
+    padding: 0.2%;
+}
+
+.icon2 p{
+    text-align: left;
+    padding-top: 130px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+
+.icon2 img{
+    margin-left: 5px;
+    height: 45px;
+    margin-bottom: -120px;
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
+}
+
+
+.icon2 .open2{
+    background-color: rgb(25, 22, 36, 0);
+    border: 1px solid #191624;
+    border-radius: 180px;
+    margin-top: 25px;
+    margin-left: 33px;
+    width: 110px;
+    height: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.icon2 .open2 a{
+    margin: 30px;
+    text-decoration: none;
+    color: #191624;
+    font-size: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.icon2 .open2:hover{
+    background-color: rgb(25, 22, 36, 1);
+}
+
+.icon2 .open2 a:hover{
+    color: white;
+}
+
+
+.icon2 .popup2{
+    width: 100%;
+    height: 100vh ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.icon2 .popup2 .content{
+    height: auto;
+    width: 280px;
+    background-color: #faf5f5;
+    box-shadow: 1px 2px 10px #191624;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding-bottom: 30px;
+    transition: all 5s ease-in-out;
+}
+.icon2 .popup2 .content::after{
+    transform: translate(-50%, -50%) scale(2);
+}
+.icon2 .popup2 .text{
+    margin-top: 20px;
+}
+
+.icon2 .popup2 ul li{
+    margin-left: 30px; 
+    margin-top: 15px;
+    line-height: 25px;  
+    color: #9a8d8f;
+    font-size: 17px;
+}
+
+.icon2 .popup2 .button{
+    margin-top: 150px;
+    margin-left: 72px;
+}
+.icon2 .popup2 .btn2{
+    background-color: #191624;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icon1 img{
+    margin-left: 5px;
+    height: 45px;
+    margin-bottom: -120px;
+}
+
+.icon1 p{
+    text-align: left;
+    padding-top: 130px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+
+.icon1 .open{
+    background-color: rgb(25, 22, 36, 0);
+    border-radius: 180px;
+    margin-top: 50px;
+    margin-left: 33px;
+    width: 110px;
+    height: 30px;
+    border: 1px solid #191624;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon1 .open a{
+    margin: 30px;
+    text-decoration: none;
+    color: #191624;
+    font-size: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon1 .open:hover{
+    background-color: rgb(25, 22, 36, 1);
+}
+
+.icon1 .open a:hover{
+    color: white;
+}
+
+.icon1 .popup{
+    width: 100%;
+    height: 100vh ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.icon1 .popup .content{
+    height: auto;
+    width: 280px;
+    background-color: #faf5f5;
+    box-shadow: 1px 2px 10px #191624;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+}
+
+.icon1 .popup .text{
+    margin-top: 20px;
+}
+
+.icon1 .popup ul li{
+    margin-left: 30px; 
+    margin-top: 15px;
+    line-height: 25px;  
+    color: #9a8d8f;
+    font-size: 17px;
+}
+
+.icon1 .popup .button{
+    margin-top: 150px;
+    margin-left: 72px;
+}
+.icon1 .popup .btn{
+    background-color: #191624;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icon3 img{
+    margin-left: 5px;
+    height: 45px;
+    margin-bottom: -120px;
+}
+
+.icon3 p{
+    text-align: left;
+    padding-top: 130px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.icon3 .open3{
+    background-color: rgb(25, 22, 36, 0);
+    border: 1px solid #191624;
+    border-radius: 180px;
+    margin-top: 48px;
+    margin-left: 33px;
+    width: 110px;
+    height: 30px;
+    transition: all .5s ease-in-out;
+}
+
+.icon3 .open3 a{
+    margin: 30px;
+    text-decoration: none;
+    color: #191624;
+    font-size: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.icon3 .open3:hover{
+    background-color: rgb(25, 22, 36, 1);
+    color: white;
+}
+
+.icon3 .open3 a:hover{
+    color: white;
+}
+
+.icon3 .popup3{
+    width: 100%;
+    height: 100vh ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.icon3 .popup3 .content{
+    height: auto;
+    width: 280px;
+    background-color: #faf5f5;
+    box-shadow: 1px 2px 10px #191624;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+}
+
+.icon3 .popup3 .text{
+    margin-top: 20px;
+}
+
+.icon3 .popup3 ul li{
+    margin-left: 30px; 
+    margin-top: 15px;
+    line-height: 25px;  
+    color: #9a8d8f;
+    font-size: 17px;
+}
+
+.icon3 .popup3 .button{
+    margin-top: 150px;
+    margin-left: 72px;
+}
+.icon3 .popup3 .btn3{
+    background-color: #191624;
+    margin: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Menu 4 */
+
+.menu4{
+    margin-top: 400px;
+}
+.portfolio .judul{
+    text-align: center;
+    margin-top: 480px;
+}
+
+.judul .sub{
+    font-size: 13px;
+    color: #737373;
+   
+}
+
+
+.gambar1, .gambar2, .gambar3{
+    height: 250px;
+    width: 500px;
+    background-color: #faf5f5;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 10px #d9d9d9;
+}
+
+
+.gambar1 img, .gambar2 img, .gambar3 img{
+    height: 65%;
+    border-radius: 75px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+
+.slider h1{
+    font-size: 20px;
+    margin-top: 45px;
+    margin-left: -15px;
+}
+
+.slider p{
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: -15px;
+    padding-right: 20px;
+}
+
+.slider a img{
+    transform: rotate(90deg);
+    height: 75px;
+    margin: auto;
+    margin-left: 570px;
+    margin-top: 40px;
+    transition: all .5s ease;
+
+    
+}
+
+.slider a img:hover{
+    opacity: 50%;
+}
+
+.slider .space1{
+    margin-top: 10px;
+}
+.gambar2{
+    margin-top: 170px;
+}
+.slider .space2{
+    margin-top: 100px;
+}
+.gambar3{
+    margin-top: 140px;
+}
+
+/* Menu 5 */
+
+.menu5{
+    margin-top: 400px;
+}
+
+.contact .judul{
+    text-align: center;
+    margin-top: 480px;
+}
+
+.judul .sub{
+    font-size: 13px;
+    color: #737373;
+}
+
+.contact .icon img{
+    height: 80px;
+    margin-top: 20px;
+}
+
+.contact .icon .text{
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: -60px;
+    margin-left: 65px;
+    color: #191624;
+}
+
+.contact .icon a{
+    color: #5271ff;
+}
+
+.contact .icon{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.contact .send img{
+    height: 50px;
+    margin-left: 125px;
+    display: flex;
+    padding: 5px;
+    padding-top: 2px;
+
+}
+
+.text a{
+    transition: 0.5s ease-in-out;
+    opacity: 100%;
+}
+.text a:hover{
+    opacity: 50%;
+}
+
+.contact .send p{
+    font-size: 12px;
+    display: flex;
+    padding: 5px;
+    margin-top: -48px;
+    text-decoration: none;
+    color: white;
+    margin-left: 28px;
+    cursor: pointer;
+}
+
+.contact .send{
+    width: 200px;
+    height: 40px;
+    background-color: #5271ff;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 70px;
+    margin-left: 510px;
+    padding: auto;
+    
+}
+
+.send{
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+.send:hover{
+    transform: scale(1.1);
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #5271ff;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.foot p{
+    margin-top: 90px;
+    color: white;
+    font-size: 9px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    margin-top: -100px;
+    transition: all .5s ease-in-out;
+    font-size: 15px;
+}
+
+.foot a:hover{
+    opacity: 50%;
+}
+footer h2{
+    text-align: left;
+    margin-top: -100px;
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+footer h5{
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 25px;
+    color: white;
+}
+
+.sosmed3 {
+    margin-left: 980px;
+    margin-top: -40px;
+}
+
+.sosmed3 img{
+    position: relative;
+    height: 25px;
+    margin-left: 25px;
+    transition: 0.5s;
+    transform: scale(1);
+    
+}
+
